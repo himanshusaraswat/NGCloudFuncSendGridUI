@@ -1,0 +1,9 @@
+<div class="d-flex" style="align-items: center;
+    justify-content: space-between;">
+  <div class="data text-white mr-2">{{data._message | titlecase }}</div>
+  <ng-container>
+    <i *ngIf="data._action==='error'" class="text-danger fas fa-lg fa-exclamation-triangle"></i>
+    <i *ngIf="data._action==='success'" style="color:#ffa726;" class="fas fa-lg fa-thumbs-up"></i>
+    <i *ngIf="data._action==='welcome'" style="color:#ffa726;" class="fas fa-lg fa-envelope-open-text"></i>
+  </ng-container>
+</div>

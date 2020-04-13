@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "hsdevstudio-com",
+    "staging": "hsdevstudio-test"
+  }
+}

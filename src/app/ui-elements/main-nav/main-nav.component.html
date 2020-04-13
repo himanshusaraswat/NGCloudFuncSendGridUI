@@ -1,0 +1,17 @@
+<nav style="height: 70px;"
+  class="navbar fixed-top navbar-expand-lg justify-content-md-between justify-content-lg-between ">
+  <!-- <a href="#" class="navbar-brand mb-0 h1 ">
+    <img class="logo" src="./assets/amdocs-logo.png" alt="Spaces and stories logo">
+  </a> -->
+  <!--<h2 class="mx-auto order-0 heading-title" [class.heading-login]="userRole !=='voter'">Innovators' Fair</h2> -->
+  <ng-container *ngIf="(auth.isUserFound | async)?.isLoggedIn">
+    <a (click)="auth.signOut()" (click)="auth.signOut()"
+      class="nav-item nav-link btn btn-bd-download d-lg-inline-block ml-auto mr-md-5 mr-lg-5 theme-btn mobile-hidden">Sign
+      out<i class="fas fa-sign-out-alt"
+        style="padding-left: 11px;vertical-align: inherit;font-size: 1.75em;"></i></a>
+    <a (click)="auth.signOut()" (click)="auth.signOut()"
+      class="nav-item nav-link btn btn-bd-download d-lg-inline-block ml-auto mr-md-5 mr-lg-5 desktop-hidden"><i
+        class="fas fa-sign-out-alt fa-lg" style="padding-left: 11px;"></i></a>
+  </ng-container>
+</nav>
+<div class="pl-4"></div>
