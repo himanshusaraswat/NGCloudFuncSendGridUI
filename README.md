@@ -9,7 +9,7 @@
 
 1.  Run
 
-- `git clone hhttps://github.com/himanshusaraswat/NGCloudFuncSendGridUI.git`
+- `git clone https://github.com/himanshusaraswat/NGCloudFuncSendGridUI.git`
 - `cd NGCloudFuncSendGridUI`
 - `npm install`
 
