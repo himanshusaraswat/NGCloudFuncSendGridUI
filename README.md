@@ -1,27 +1,42 @@
-# SendEmails
+## Features
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+- Angular 9.x + Firebase
+- OAuth and Sign in with Email link with Firebase
+- Angular Material
+- Complete integraton with HTTPS Callable Cloud Functions for Firebase
 
-## Development server
+## Usage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1.  Run
 
-## Code scaffolding
+- `git clone hhttps://github.com/himanshusaraswat/NGCloudFuncSendGridUI.git`
+- `cd NGCloudFuncSendGridUI`
+- `npm install`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2.  Create a project at https://firebase.google.com/ and grab your web config:
 
-## Build
+![](https://firebasestorage.googleapis.com/v0/b/firestarter-96e46.appspot.com/o/project-config.PNG?alt=media&token=5eabb205-7ba2-4fc3-905f-e9547055e754)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+3.  Add the config to your Angular environment
 
-## Running unit tests
+#### src/environments/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Update the `environment.prod.ts` and `environment.ts` files. 
 
-## Running end-to-end tests
+```typescript
+export const environment = {
+  production: false,
+  firebase: {
+    apiKey: 'APIKEY',
+    authDomain: 'DEV-APP.firebaseapp.com',
+    databaseURL: 'https://DEV-APP.firebaseio.com',
+    projectId: 'DEV-APP',
+    storageBucket: 'DEV-APP.appspot.com',
+    messagingSenderId: '...',
+    appId: '...',
+  }
+};
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+4.  Run `ng serve`
